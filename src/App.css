@@ -1,0 +1,151 @@
+
+body {
+  background-color: purple; 
+  color: white; 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.dashboard-container {
+  padding: 20px;
+}
+
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.stat-card p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+
+.product-form {
+  margin-bottom: 40px;
+}
+
+.product-form h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color:  pink;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: pink;
+}
+
+
+#inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.inventory-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-card h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.inventory-card .description {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.inventory-card .price {
+  font-weight: bold;
+}
+
+.inventory-card .quantity {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.inventory-card button {
+  background-color: #e73cc8;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inventory-card button:hover {
+  background-color: #c02b93;
+}
+
+.inventory-card button:focus {
+  outline: none;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: black;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+ 
+}
